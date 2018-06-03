@@ -2,45 +2,45 @@
 		margin-left: auto;
 	}
 .nav-link{
-	padding-left: 13px;
+	padding-left : 13px;
 	padding-right: 13px;
 }
 .sign-in {
-	background-color: #2E2999;
-	color: #E8E8E9;
-	margin-top: -8px;
-	height: 56px;
-	margin-bottom: -8px;
-	margin-right: -17px;
-	font-size: 1.2em;
-	padding : 13px;
+	background-color : #2E2999;
+	color            : #E8E8E9;
+	margin-top       : -8px;
+	height           : 56px;
+	margin-bottom    : -8px;
+	margin-right     : -17px;
+	font-size        : 1.2em;
+	padding          : 13px;
 	background-repeat: no-repeat;
 
 }
-.ml10 {
-  position: relative;
-  font-weight: 900;
-  font-size: 4em;
+.ml9 {
+	position   : relative;
+	font-weight: 200;
+	font-size  : 4em;
 }
 
-.ml10 .text-wrapper {
-  position: relative;
-  display: inline-block;
-  padding-top: 0.2em;
-  padding-right: 0.05em;
-  padding-bottom: 0.1em;
-  overflow: hidden;
+.ml9 .text-wrapper {
+	position      : relative;
+	display       : inline-block;
+	padding-top   : 0.2em;
+	padding-right : 0.05em;
+	padding-bottom: 0.1em;
+	overflow      : hidden;
 }
 
-.ml10 .letter {
-  display: inline-block;
-  line-height: 1em;
-  transform-origin: 0 0;
-  font-family: 'Helvetica Nueue', helvetica, arial, sans-serif;
+.ml9 .letter {
+	transform-origin: 50% 100%;
+	display         : inline-block;
+	line-height     : 1em;
 }
 
 #topContainer {
-	background-image: url("../images/background.jpg");
-	background-size: 100%;
-	color: #E3D4CC
+	background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../images/background.jpg");
+	background-size : 100%;
+	color           : #F8F9FA;
+	font-size		:  2.6em; 
 }

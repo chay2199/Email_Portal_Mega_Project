@@ -3,25 +3,35 @@ $("#topContainer").css("min-height",$(window).height());
 
 $(document).ready(function()
 {
-	// Wrap every letter in a span
-$('.ml10 .letters').each(function(){
-  $(this).html($(this).text().replace(/([^\x00-\x80]|\w)/g, "<span class='letter'>$&</span>"));
-});
+	var str = ["Inbox","Drafts","Spams","Trash","Everything at one platform.","Popeye Mail"];
+	var i=1;
+	jQuery(str).each(function(index,value)
+	{
+			setTimeout(function()
+				{	
+					var self = this;
+					$("#letters").text(value);
+					anime.timeline({loop: false})
+					.add({
+				    targets: '.ml9',
+				    opacity: 1,
+				    duration: 1000,
+				    easing:"easeInExpo",
+				    delay: 0
+				  	})
+				  	.add({
+				    targets: '.ml9',
+				    opacity: 0,
+				    duration: 1200,
+				    easing: "easeOutExpo",
+				    delay: 1000
+				});	
+				console.log(value);
 
-anime.timeline({loop: true})
-  .add({
-    targets: '.ml10 .letter',
-    rotateY: [-90, 0],
-    duration: 1300,
-    delay: function(el, i) {
-      return 45 * i;
-    }
-  }).add({
-    targets: '.ml10',
-    opacity: 0,
-    duration: 1000,
-    easing: "easeOutExpo",
-    delay: 1000
-  });
-});
 
+				},i*3600-3600);
+			i++;
+	});
+				
+	
+});
