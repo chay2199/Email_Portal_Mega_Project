@@ -1,32 +1,42 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>Email Portal</title>
+	<title>Dank Mail</title>
 	<meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css">
+
   <link rel="stylesheet" type="text/css" href="css/homepage.css">  
-	<link href="https://fonts.googleapis.com/css?family=Slabo+27px" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Sacramento" rel="stylesheet">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js"></script>
 </head>
 <body>
-		<div class="navbar navbar-expand-sm bg-light top-nav navbar-fixed" >
-			<a href="#" class="navbar-brand">Logo</a>
+		<div class="navbar navbar-expand-sm bg-light  " >
+			<a href="#" class="navbar-brand logo" >Dank Mail</a>
 			<ul class="navbar-nav navbar-options" style="">
 				<li class="nav-item active"><a href="#" class="nav-link " style="padding: 8px 13px;">Create account</a></li>
 				<li class="nav-item"><a href="#" class="sign-in nav-link " style="padding: 13px;">Sign in</a></li>
 			</ul>
 		</div>
 		<div class="Container" id="topContainer">
-			<div class="row" id="topRow" >
-				<div class="col-lg-12 col-md-offset-4" style="text-align: center;margin: auto;" >
+			<div class="row" id="topRow" style=""> 
+				<div class="col-lg-12 col-md-offset-4" style="text-align: center;margin-top: 130px;" >
 					<h1 class="ml9">
   						<span class="text-wrapper">
     						<span id="letters"></span>
-  						</span>
-</h1>
+    					</span>
+    				</h1>
+	    			<form id="topEmail">
+	    				<div class="input-group" >
+	    					<div class="input-group-prepend">
+	    						<span class="input-group-text">@</span>
+	    					</div>
+	    					<input type="Email" name="Email" placeholder="Email" class="form-control">
+	    				</div>
+	    				<button class="btn btn-success padding-top">Sign In</button>
+					</form>
 				</div>
 			</div>
 		</div>
