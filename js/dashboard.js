@@ -1,0 +1,1 @@
+$("body").css("min-height",$(window).height());

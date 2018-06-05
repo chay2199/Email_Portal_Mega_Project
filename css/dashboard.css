@@ -1,0 +1,67 @@
+.transparent {
+	background-color: rgb(0,0,0,0);
+}
+
+body {
+	background-image: url("../images/dashboard_background.jpg");
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	background-size: 100%;
+}
+.logo {
+	font-family: 'Sacramento', cursive;
+	font-weight: bolder;
+	padding: 0;
+	font-size: 1.4em;
+	color: white;
+}
+#imaginary_container {
+	position: relative;
+	left: 100px;
+}	
+.form-control {
+	min-width: 400px;
+}
+
+.stylish-input-group .input-group-addon{
+    background: #FCFCFC ; 
+    min-height: 15;
+}
+.stylish-input-group .form-control{
+	border-right:0; 
+	box-shadow:0 0 0; 
+	border-color:#ccc;
+}
+.stylish-input-group button{
+    border:0;
+    background:transparent;
+}
+
+.user-data {
+	float: right;
+	position: relative;
+	right: 0px;
+	margin-left: auto;
+	vertical-align: middle;
+	color: white;
+
+}
+.user-data p{
+	margin-top: 10px;
+	margin-left: 4px;
+	vertical-align: middle;
+	margin-bottom: 0;
+}
+.avatar {
+	margin-left: 10px;
+    vertical-align: middle;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+}
+
+.line {
+	margin:5px 10px;
+	background-color: white;
+	size: 15px;
+}
