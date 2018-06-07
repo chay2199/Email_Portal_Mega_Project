@@ -7,6 +7,8 @@ body {
 	background-repeat: no-repeat;
 	background-attachment: fixed;
 	background-size: 100%;
+
+
 }
 .logo {
 	font-family: 'Sacramento', cursive;
@@ -107,4 +109,16 @@ body {
 
 .navigation-bar {
 	position: fixed;
+}
+.container {
+	height: 95%;
+
+}
+.content {
+	height:100%;
+	overflow: scroll;	
+}
+::-webkit-scrollbar {
+    width: 0px;  /* remove scrollbar space */
+    background: transparent;  /* optional: just make scrollbar invisible */
 }
