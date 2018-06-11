@@ -1,26 +1,29 @@
- body {
+  body {
     background-image: url('/images/background.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
 }
  * {box-sizing: border-box}
-  input[type=text], input[type=password] {
+  input[type=text], input[type=number], input[type=email], input[type=password] {
   width: 100%;
   padding: 15px;
   margin: 5px 0 22px 0;
   display: inline-block;
   border: none;
   background: #f1f1f1;
+  border-radius:10px;
 }
 .logo {
 	font-family: 'Sacramento', cursive;
 	font-weight: bolder;
 	padding: 0;
-	font-size: 3.4em;
-	color:#0f8cd8d4
+	font-size: 5em;
+	color:#f764dd
 }
 a:link{
     text-decoration: none;
 }
-input[type=text]:focus, input[type=password]:focus {
+input[type=text]:focus, input[type=text]:focus, input[type=text]:focus, input[type=password]:focus {
   background-color: #ddd;
   outline: none;
 }
@@ -33,7 +36,7 @@ button {
   border: none;
   cursor: pointer;
   width: 100%;
-  opacity: 0.9;
+  border-radius:25px;
 }
 
 button:hover {
@@ -42,7 +45,7 @@ button:hover {
 
 .cancelbtn {
   padding: 14px 20px;
-  background-color: #f44336;
+  background-color: #f32a1b;
 }
 
 .cancelbtn, .signupbtn {
@@ -70,10 +73,10 @@ button:hover {
 
 .modal-content {
   background-color: #d2d2d2ed;
-  margin: 5% auto 15% auto; 
+  margin: 2% 7% 15% auto; 
   border: 1px solid #888;
-  width: 25%;
-  border-radius: 20px 20px 50px 20px; 
+  width: 27%;
+  border-radius: 24px 90px 45px 45px; 
 }
 
 
@@ -112,3 +115,40 @@ hr {
   }
 }
 
+body {
+    font-family: "arial", sans-serif;
+}
+
+.sidenav {
+    height: 95%;
+    width: 250px;
+    position: fixed;
+    z-index: 1;
+    top: 100;
+    left: 0;
+    background-color: #1e415a;
+    overflow-x: hidden;
+    padding-top: 130px;
+    border-radius: 110px 260px 560px 0px;
+}
+
+.sidenav a {
+    padding: 10px 16px 6px 42px;
+    text-decoration:dashed;
+    font-size: 20px;
+    color: #ffffff;
+    display:flex;
+}
+
+.sidenav a:hover {
+    color: #ff7c7c;
+}
+
+.main {
+    margin-left: 200px; /* Same as the width of the sidenav */
+}
+
+@media screen and (max-height: 450px) {
+  .sidenav {padding-top: 15px;}
+  .sidenav a {font-size: 18px;}
+}
