@@ -1,13 +1,33 @@
-  body {
-    background-image: url('/images/background.jpg');
+body {
+    background-color: aliceblue;
     background-repeat: no-repeat;
     background-size: cover;
+/*
+    animation-name: bodyAnime;
+    animation-delay: 1s;
+    animation-iteration-count: infinite;
+*/
+    background: linear-gradient(35deg, #ffffff , #ffffff);
 }
+
+/*
+@keyframes bodyAnime{
+    20%{
+        
+    }
+    50%{
+        opacity: 0.2;
+    }
+    100%{
+        opacity: 0;
+    }
+}
+*/
  * {box-sizing: border-box}
   input[type=text], input[type=number], input[type=email], input[type=password] {
   width: 100%;
   padding: 15px;
-  margin: 5px 0 22px 0;
+  margin: 5px 0px 10px 0px;
   display: inline-block;
   border: none;
   background: #f1f1f1;
@@ -18,7 +38,7 @@
 	font-weight: bolder;
 	padding: 0;
 	font-size: 5em;
-	color:#f764dd
+	color:#000000
 }
 a:link{
     text-decoration: none;
@@ -36,7 +56,6 @@ button {
   border: none;
   cursor: pointer;
   width: 100%;
-  border-radius:25px;
 }
 
 button:hover {
@@ -55,7 +74,18 @@ button:hover {
 
 .container {
   padding: 16px;
+  animation-name: fadein;
+  animation-duration: 1s;
+  font-family: serif;
+  font-size: 16px;
+
 }
+@keyframes fadein {
+    0% {
+      transform: scale(0.9);
+      opacity: 0;
+    }
+  }
 
 .modal {
   display: none; 
@@ -67,16 +97,15 @@ button:hover {
   height: 100%; 
   overflow: auto; 
   background-color: #474e5d;
-  padding-top: 50px;
 }
 
 
 .modal-content {
-  background-color: #d2d2d2ed;
+  background-color: #ffffffed;
   margin: 2% 7% 15% auto; 
   border: 1px solid #888;
-  width: 27%;
-  border-radius: 24px 90px 45px 45px; 
+  width: 24%;
+  padding: 12px;
 }
 
 
@@ -120,16 +149,14 @@ body {
 }
 
 .sidenav {
-    height: 95%;
+    height: 100%;
     width: 250px;
     position: fixed;
     z-index: 1;
-    top: 100;
     left: 0;
-    background-color: #1e415a;
+    background-color: #000000;
     overflow-x: hidden;
     padding-top: 130px;
-    border-radius: 110px 260px 560px 0px;
 }
 
 .sidenav a {
@@ -141,7 +168,7 @@ body {
 }
 
 .sidenav a:hover {
-    color: #ff7c7c;
+    color: #a8c6fb;
 }
 
 .main {
