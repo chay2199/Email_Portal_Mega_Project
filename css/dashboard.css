@@ -1,0 +1,124 @@
+.transparent {
+	background-color: rgb(0,0,0,0);
+}
+
+body {
+	background-image:linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url("../images/dashboard_background.jpg");
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	background-size: 100%;
+
+
+}
+.logo {
+	font-family: 'Sacramento', cursive;
+	font-weight: bolder;
+	padding: 0;
+	font-size: 1.4em;
+	color: white;
+}
+#imaginary_container {
+	position: relative;
+	left: 100px;
+}	
+.form-control {
+	min-width: 400px;
+}
+
+.stylish-input-group .input-group-addon{
+    background: #FCFCFC ; 
+    min-height: 15;
+}
+.stylish-input-group .form-control{
+	border-right:0; 
+	box-shadow:0 0 0; 
+	border-color:#ccc;
+}
+.stylish-input-group button{
+    border:0;
+    background:transparent;
+}
+
+.user-data {
+	float: right;
+	position: relative;
+	right: 0px;
+	margin-left: auto;
+	vertical-align: middle;
+	color: white;
+
+}
+.user-data p{
+	margin-top: 10px;
+	margin-left: 4px;
+	vertical-align: middle;
+	margin-bottom: 0;
+}
+.avatar {
+	margin-left: 10px;
+    vertical-align: middle;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+}
+
+.line {
+	margin:0px 10px;
+	background-color: white;
+	size: 15px;
+	
+}
+.side-options {
+	
+	border: 0px;
+	color: white;
+	list-style-type: none;
+	color: white;
+	padding-left: 5px;
+	background-color: rgb(0,0,0,0);
+}
+.side-options:hover {
+	border: 0px;
+	list-style-type: none;
+	color: white;
+	padding-left: 5px;
+	background-color: rgb(0,0,0,.5);
+}
+.side-option-group {
+	margin-top: 10px;
+	padding-left: 0;
+}
+.side-option-group li{
+	padding-left: 10px;
+}
+.selected {
+	border-left: 5px solid white;
+	border-top: 0.5px solid white;
+	border-bottom: 0.5px solid white;
+	border-right: 0.5px solid white;
+}
+
+.side-button {
+	border: 0;
+	margin-left: 44px;
+	color: white;
+}
+.white-text {
+	color: white;
+}
+
+.navigation-bar {
+	position: fixed;
+}
+.container {
+	height: 95%;
+
+}
+.content {
+	height:100%;
+	overflow: scroll;	
+}
+::-webkit-scrollbar {
+    width: 0px;  /* remove scrollbar space */
+    background: transparent;  /* optional: just make scrollbar invisible */
+}
