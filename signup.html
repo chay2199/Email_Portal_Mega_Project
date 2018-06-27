@@ -1,54 +1,75 @@
  <!DOCTYPE html>
-<html>
-<head>
+ <html>
+ <head>
 	<title>Dank Mail</title>
 	<meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" type="text/css" href="css/signup.css">  
-  <link href="https://fonts.googleapis.com/css?family=Sacramento" rel="stylesheet">
-    <script src="js/signup.js"></script>
-</head>
-<body>
-    <div class="sidenav">
-    <a href="homepage.html">Home</a>
-    <a href="#">Services</a>
-    <a href="#">About</a>
-    <a href="#">Contact</a>
-    </div>
-    <div class="container">
-  <form class="modal-content" action="/action_page.php">
-        <a href="#" class="logo" >Dank Mail</a>
-      <h1>Sign Up</h1>
-      <p>Please fill in this form to create an account.</p>
-      <hr>
-      <label for="name"><b>Name</b></label>
-      <input type="text" placeholder="Enter your name" name="name" required>
-      
-      <label for="number"><b>Mobile Number</b></label>
-      <input type="text" placeholder="Enter your phone number" name="phone number" required pattern="[789][0-9]{9}">
-        
-      <label for="email"><b>Email</b></label>
-      <input type="email" placeholder="Enter your email" name="email" required>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="css/signup.css">  
+	<link href="https://fonts.googleapis.com/css?family=Sacramento" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	<script src="js/signup.js"></script>
+ </head>
+ <body>
+	
+	<div class="container" style="text-align: center;">
+		<form class=" modal-content" action="/action_page.php">
+			<a href="#" class="logo" >Dank Mail</a>
+			<p style="text-align: left;font-size: larger;color: #262833;font-family: 'Montserrat',sans-serif;">Create your Dank Account</p>
 
-      <label for="psw"></label>
-      <b>Password</b>: <input type="password" placeholder="Enter Password" name="psw" required id="myInput">
-      <input type="checkbox" onclick="myFunction()">Show Password 
-      <br><br>
-      <label for="psw-repeat"><b>Repeat Password</b></label>
-      <input type="password" placeholder="Repeat Password" name="psw-repeat" required>
+			<div class="input-group">
+				<div class="input-group-prepend">
+					<span class="input-group-text" for="name"><b>Name</b></span>
+				</div>
+				<input type="text" class="form-control" placeholder="John Doe" name="name" required>
+			</div> 
+			<br>     
+			<div class="input-group">
+				<div class="input-group-prepend">
+					<span for="number" class="input-group-text"><b>#</b></span>
+				</div>
+				<input type="text" class="form-control" placeholder="Mobile Number" name="phone number" required pattern="[789][0-9]{9}">
+			</div>
+			<br>
+			<div class="input-group">
+				<div class="input-group-prepend">
+					<span class="input-group-text" for="email"><b>@</b></span>
+				</div>
+				<input type="email" class="form-control " placeholder="xyz@abc.com" name="email" >
+			</div>
+			<br>
+			<div class="form-group">
+				<input type="password" class="form-control" placeholder="Password" name="psw" required id="myInput">
+			</div>
+			
+			<div class="form-group">
+				<input type="password" class="form-control" placeholder="Repeat Password" name="psw-repeat" required>
+			</div>
+			<input type="checkbox" onclick="myFunction()">Show Password 
+			<br><br>
 
-      <label>
-        <input type="checkbox" checked="checked" name="remember" style="margin-bottom:15px"> Remember me
-      </label>
+			<label>
+				<input type="checkbox" checked="checked" name="remember" style="margin-bottom:15px"> Remember me
+			</label>
 
-      <p>By creating an account you agree to our <a href="#" style="color:dodgerblue">Terms & Privacy</a>.</p>
+			<p>By creating an account you agree to our <a href="#" style="color:dodgerblue">Terms & Privacy</a>.</p>
 
-      <div class="clearfix">
-        <button type="submit" class="signupbtn">Sign Up</button>
-        <button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn"><a href="homepage.html">Cancel</a></button>
-        
-      </div>
-    </div>
-  </form>
-    </body>
-</html>
+			<div class="clearfix">
+				<button type="submit" class="btn btn-success">Sign Up</button>
+				<button type="button" class="btn" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn"><a href="homepage.html">Cancel</a></button>
+
+			</div>
+		</div>
+	</form>
+	<div class="navbar " id="bottom-nav">
+		<ul>
+			<li><a href="homepage.html">Home</a></li>
+			<li><a href="#">Services</a></li>
+			<li><a href="#">Contact</a></li>
+			<li><a href="#">About</a></li>
+		</ul>
+	</div>
+ </body>
+ </html>
