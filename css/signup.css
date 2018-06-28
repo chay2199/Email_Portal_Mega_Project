@@ -1,15 +1,22 @@
 body {
-    background-color: aliceblue;
-    background-repeat: no-repeat;
-    background-size: cover;
-/*
-    animation-name: bodyAnime;
-    animation-delay: 1s;
-    animation-iteration-count: infinite;
-*/
-    background: linear-gradient(35deg, #ffffff , #ffffff);
-}
 
+    background-repeat: no-repeat;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.0)), url("../images/siup.jpg");
+    background-size: 100% ;
+}
+.create-acc{
+  text-align: left;
+  font-size: larger;
+  color: #262833;
+  font-family: 'Montserrat',sans-serif;
+}
+#error {
+            font-weight: lighter;
+            color: red;
+            font-size: x-small;
+            margin: 0 auto;
+
+        }
 /*
 @keyframes bodyAnime{
     20%{
@@ -23,44 +30,38 @@ body {
     }
 }
 */
- * {box-sizing: border-box}
+
+/* {box-sizing: border-box}
   input[type=text], input[type=number], input[type=email], input[type=password] {
-  width: 100%;
   padding: 15px;
   margin: 5px 0px 10px 0px;
   display: inline-block;
-  border: none;
-  background: #f1f1f1;
-  border-radius:10px;
-}
+  
+}*/
 .logo {
 	font-family: 'Sacramento', cursive;
 	font-weight: bolder;
 	padding: 0;
-	font-size: 5em;
-	color:#000000
+	font-size: 2em;
+
 }
 a:link{
     text-decoration: none;
 }
-input[type=text]:focus, input[type=text]:focus, input[type=text]:focus, input[type=password]:focus {
+/*input[type=text]:focus, input[type=text]:focus, input[type=text]:focus, input[type=password]:focus {
   background-color: #ddd;
   outline: none;
-}
+}*/
 
-button {
-  background-color: #4CAF50;
-  color: white;
+/*button{
   padding: 14px 20px;
   margin: 8px 0;
   border: none;
   cursor: pointer;
   width: 100%;
-}
+}*/
 
-button:hover {
-  opacity:1;
-}
+
 
 .cancelbtn {
   padding: 14px 20px;
@@ -73,11 +74,12 @@ button:hover {
 }
 
 .container {
+  
   padding: 16px;
   animation-name: fadein;
   animation-duration: 1s;
-  font-family: serif;
   font-size: 16px;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
 
 }
 @keyframes fadein {
@@ -87,7 +89,7 @@ button:hover {
     }
   }
 
-.modal {
+/*.modal {
   display: none; 
   position: fixed; 
   z-index: 1; 
@@ -97,14 +99,16 @@ button:hover {
   height: 100%; 
   overflow: auto; 
   background-color: #474e5d;
-}
+}*/
+
 
 
 .modal-content {
-  background-color: #ffffffed;
-  margin: 2% 7% 15% auto; 
-  border: 1px solid #888;
-  width: 24%;
+  background-color: ;
+  vertical-align: middle;
+  display: inline-block;
+  border: 1px solid #d3d1d1;
+  width: 70%;
   padding: 12px;
 }
 
@@ -178,4 +182,18 @@ body {
 @media screen and (max-height: 450px) {
   .sidenav {padding-top: 15px;}
   .sidenav a {font-size: 18px;}
+}
+#bottom-nav a{
+  font-size: small;
+
+}
+#bottom-nav li{
+  list-style: none; 
+  display: inline;
+  margin: 0 8px;
+  
+  
+}
+#bottom-nav {
+background-color: rgb(39, 40, 43);
 }

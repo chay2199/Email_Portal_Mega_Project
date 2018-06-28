@@ -1,4 +1,5 @@
-$("#topContainer").css("min-height",$(window).height());
+var topNavHeight = 40+"px";
+$("#topContainer").css("min-height",$(window).height()-topNavHeight);
 $("#topRow").css("min-height",$(window).height());
 $('#topContainer').mousedown(function (e) {
   if(e.button == 2) { // right click
@@ -9,7 +10,7 @@ $('#topContainer').mousedown(function (e) {
 
 $(document).ready(function()
 {
-	var str = ["Inbox","at your Home","Business","Education","Everything at one platform.","Dank Mail"];
+	var str = ["Inbox","With Style","Dank Mail"];
 	var i=0;
 	jQuery(str).each(function(index,value)
 	{		
@@ -17,7 +18,7 @@ $(document).ready(function()
 				{	
 					var self = this;
 					console.log(index);
-					if(index==5)
+					if(index==2)
 					{
 						$("#letters").css("font-family","'Sacramento', cursive");
 						$("#letters").css("vertical-align","middle");
@@ -25,7 +26,7 @@ $(document).ready(function()
 
 					}
 					$("#letters").text(value);
-					if(index<5)
+					if(index<2)
 					{
 						anime.timeline({loop: false})
 						.add({
@@ -43,7 +44,7 @@ $(document).ready(function()
 					    delay: 1000
 						});	
 					}
-					if(index==5)
+					if(index==2)
 					{
 						anime.timeline({loop: false})
 						.add({
