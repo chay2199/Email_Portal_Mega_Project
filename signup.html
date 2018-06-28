@@ -8,57 +8,59 @@
 	<link rel="stylesheet" type="text/css" href="css/signup.css">  
 	<link href="https://fonts.googleapis.com/css?family=Sacramento" rel="stylesheet">
 	<link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
-	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js"></script>
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 	<script src="js/signup.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js"></script>
+	
+	
  </head>
  <body>
 	
 	<div class="container" style="text-align: center;">
-		<form class=" modal-content" action="/action_page.php">
-			<a href="#" class="logo" >Dank Mail</a>
-			<p style="text-align: left;font-size: larger;color: #262833;font-family: 'Montserrat',sans-serif;">Create your Dank Account</p>
+		<form class=" modal-content" id="signupForm" onsubmit="return validateForm()">
 
+			<a href="#" class="logo" >Dank Mail</a>
+			<p class="create-acc">Create your Dank Account</p>
+			<div id="error"></div>
 			<div class="input-group">
 				<div class="input-group-prepend">
 					<span class="input-group-text" for="name"><b>Name</b></span>
 				</div>
-				<input type="text" class="form-control" placeholder="John Doe" name="name" required>
+				<input id="name" type="text" class="form-control" placeholder="John Doe" name="name">
 			</div> 
 			<br>     
 			<div class="input-group">
 				<div class="input-group-prepend">
 					<span for="number" class="input-group-text"><b>#</b></span>
 				</div>
-				<input type="text" class="form-control" placeholder="Mobile Number" name="phone number" required pattern="[789][0-9]{9}">
+				<input type="text" id="phone" class="form-control" placeholder="Mobile Number" name="phone number">
 			</div>
 			<br>
 			<div class="input-group">
 				<div class="input-group-prepend">
 					<span class="input-group-text" for="email"><b>@</b></span>
 				</div>
-				<input type="email" class="form-control " placeholder="xyz@abc.com" name="email" >
+				<input type="text" id="email" class="form-control " placeholder="xyz@abc.com" name="email" >
 			</div>
 			<br>
 			<div class="form-group">
-				<input type="password" class="form-control" placeholder="Password" name="psw" required id="myInput">
+				<input type="password" id="pass" class="form-control" placeholder="Password" name="psw">
 			</div>
 			
 			<div class="form-group">
-				<input type="password" class="form-control" placeholder="Repeat Password" name="psw-repeat" required>
+				<input type="password" id="cpass" class="form-control" placeholder="Repeat Password" name="psw-repeat" >
 			</div>
 			<input type="checkbox" onclick="myFunction()">Show Password 
 			<br><br>
 
 			<label>
-				<input type="checkbox" checked="checked" name="remember" style="margin-bottom:15px"> Remember me
+				<input type="checkbox"  name="remember" style="margin-bottom:15px"> Remember me
 			</label>
 
-			<p>By creating an account you agree to our <a href="#" style="color:dodgerblue">Terms & Privacy</a>.</p>
+			<p>By creating an account you agree to our <a href="#" style="color:dodgerblue">Terms & Privacy</a></p>
 
-			<div class="clearfix">
-				<button type="submit" class="btn btn-success">Sign Up</button>
-				<button type="button" class="btn" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn"><a href="homepage.html">Cancel</a></button>
+				<button type="submit" id="submit" class="btn btn-success">Sign Up</button>
+				<button type="button" class="btn" ><a href="homepage.html">Cancel</a></button>
 
 			</div>
 		</div>

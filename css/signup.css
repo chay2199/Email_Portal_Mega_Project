@@ -1,7 +1,7 @@
 body {
 
     background-repeat: no-repeat;
-    background-image: linear-gradient(rgba(0, 0, 0, 0.0), rgba(0, 0, 0, 0.0)), url("../images/signup.jpg");
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.0)), url("../images/siup.jpg");
     background-size: 100% ;
 }
 .create-acc{
@@ -10,6 +10,13 @@ body {
   color: #262833;
   font-family: 'Montserrat',sans-serif;
 }
+#error {
+            font-weight: lighter;
+            color: red;
+            font-size: x-small;
+            margin: 0 auto;
+
+        }
 /*
 @keyframes bodyAnime{
     20%{
@@ -82,7 +89,7 @@ a:link{
     }
   }
 
-.modal {
+/*.modal {
   display: none; 
   position: fixed; 
   z-index: 1; 
@@ -92,7 +99,8 @@ a:link{
   height: 100%; 
   overflow: auto; 
   background-color: #474e5d;
-}
+}*/
+
 
 
 .modal-content {
