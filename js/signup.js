@@ -1,5 +1,26 @@
 
-console.log("I exist");
+var db = window.openDatabase('mytasks','1.0','My tasks',5*1024*1024);
+//the account is being created
+function init(){
+	console.log("Database initiated.");
+	db.transaction(function(tx){
+		tx.executeSql('CREATE TABLE IF NOT EXISTS account(name TEXT, mobilenumber INTEGER, emailid TEXT UNIQUE, password TEXT )');
+	});
+}
+	
+	function add() {
+		console.log("tryin to add in the database");
+		db.transaction(function(tx){
+			var name = $("#name").val();
+			var mobilenumber = $("#phone").val();
+			var email = $("#email").val();
+			var pass = $("#pass").val();
+			tx.executeSql('insert into account values(?,?,?,?)',[name,mobilenumber,email,pass]);
+
+			
+		})
+	}
+
 function myFunction() {
 	var x = document.getElementById("pass");
 	if (x.type === "password") {
@@ -60,6 +81,8 @@ function myFunction() {
 		if(key==1)
 		{
 			alert("The form filled succesfully");
+			add();
+			window.location = "./homepage.html";
 		}
 		$("#error").html(errorMessage);
 	}
@@ -71,4 +94,4 @@ function myFunction() {
 			function(event){
 				event.preventDefault();
 			}
-		)
+		);

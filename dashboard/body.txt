@@ -1,19 +1,4 @@
-
-<head>
-	<title>Dank</title>
-	<meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css">
-  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
-  <link rel="stylesheet" type="text/css" href="css/dashboard.css">  
-  <link href="https://fonts.googleapis.com/css?family=Sacramento" rel="stylesheet">
-	  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js"></script>
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js"></script>
-</head>
-<body>
-			<nav class="navbar sticky-top navbar-expand-sm transparent" style="border-bottom: 1px solid white;" >
+<nav class="navbar sticky-top navbar-expand-sm transparent" style="border-bottom: 1px solid white;" >
 					<div class="navbar-brand logo">Dank Mail</div>
 					<div id="imaginary_container"> 
                 			<div class="input-group stylish-input-group">
@@ -24,27 +9,27 @@
                     <div class="user-data">
                     			
                     			<img src="images/img_avatar.png" alt="Avatar" class="avatar" >
-								<p style="float: right;">John Doe</p>
+								<p id="username" style="float: right;">John Doe</p>
                     		</div>				
             	</div>
             	<hr class="line" style="display: inline-block;">
 			</nav>
 			
 			<div class="container row ">
-				<div class="  side-nav col-lg-2" style="position: flex;">
+				<div class="  side-nav col-sm-2" style="position: flex;">
 						<ul class="side-option-group">
-							<button id="inbox" type="button" class=" selected transparent side-options">Inbox</button>
-							<button type="button" class=" transparent side-options">Starred</button>
-							<button type="button" class=" transparent side-options">Important</button>
-							<button type="button" class=" transparent side-options">Sent Mail</button>
-							<button type="button" class=" transparent side-options">Drafts</button><br>
-							<button type="button" class=" transparent side-options">Trash</button>
+							<button type="button" class="side-options selected transparent ">Inbox</button>
+							<button type="button" class="side-options transparent ">Starred</button>
+							<button type="button" class="side-options transparent ">Important</button>
+							<button type="button" class="side-options transparent ">Sent Mail</button>
+							<button type="button" class="side-options transparent ">Drafts</button><br>
+							<button type="button" class="side-options transparent ">Trash</button>
 						</ul>
 					<div class="transparent dropdown ">
-	    					<button type="button" class="transparent side-button" data-toggle="dropdown" data-target = "dropdown-menu">
+	    					<button type="button" class="side-button transparent " data-toggle="dropdown" data-target = "dropdown-menu">
 						      <i class="fa fa-caret-down"></i>Categories
 	    					</button>
-						    <div class=" transparent dropdown-menu">
+						    <div class="dropdown-menu transparent ">
 						      <a class="white-text dropdown-item" href="#">Social</a>
 						      <a class=" white-text dropdown-item" href="#">Promotions</a>
 						      <a class="white-text dropdown-item" href="#">Primary</a>
@@ -75,6 +60,5 @@
 			
 			
 
-		<script src="js/dashboard.js">
+	<script src="js/dashboard.js">
 		</script>
-</body>
